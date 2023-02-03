@@ -1,13 +1,26 @@
-console.log(item);
+//console.log(item);
 
-const body = item.body;
-console.log(body);
+const categori= document.querySelectorAll (".item") 
+console.log("Number of categories:", categori.length )
 
-const list = body.firstElementChild;
-console.log(list);
+for (const subCategori of categori) {
 
-const firstListItem = list.firstElementChild;
-console.log(firstListItem);
+    const title= subCategori.querySelector("h2");
+    const list= subCategori.querySelectorAll("li");
 
-const listItems = list.children;
-console.log(listItems);
+    console.log("Category:", title.textContent);
+    console.log("Elements:", list.length);
+
+}
+
+ //const body = item.body;
+ //console.log(body);
+
+ //const list = body.firstElementChild;
+// console.log(list);
+
+// const firstListItem = list.firstElementChild;
+// console.log(firstListItem);
+
+// const listItems = list.children;
+// console.log(listItems);
