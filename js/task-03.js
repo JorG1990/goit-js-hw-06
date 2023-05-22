@@ -15,7 +15,8 @@ const images = [
 const galery = document.querySelector(".gallery") 
 
 images.forEach (({url, alt}) => {
-  const imageElement= `<img url"${url}" alt"${alt}"/>`
+  const imageElement= `<li><img src="${url}" alt="${alt}"/></li>`
+  galery.insertAdjacentHTML('beforeend', imageElement);
   console.log (imageElement)
 });
 
