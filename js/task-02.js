@@ -1,16 +1,19 @@
 const ingredients = [
-  'Potatoes',
-  'Mushrooms',
-  'Garlic',
-  'Tomatos',
-  'Herbs',
-  'Condiments',
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
 ];
-let priori = document.getElementById("ingredients");
 
-for(var i in ingredients){
-  
-  let otter = document.createElement("li");
-  otter.textContent=ingredients[i];
-  priori.appendChild(otter);
-}
+const ul = document.getElementById("ingredients");
+
+const liElements = ingredients.map((ingredient) => {
+  const li = document.createElement("li");
+  li.textContent = ingredient;
+  li.classList.add("item");
+  return li;
+});
+
+ul.append(...liElements);

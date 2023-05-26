@@ -21,11 +21,3 @@ images.forEach (({url, alt}) => {
 });
 
 const insert = document.querySelector('images');
-/*insert.addEventListener('click', () => {
-  const gallerySelect = document.querySelector('.gallery');
-  subject.insertAdjacentHTML(gallerySelect.value, '<strong>inserted text</strong>');
-});*/
-
- /*const reset = document.querySelector('#reset');
-reset.addEventListener('click', () => {
-  document.location.reload()*/

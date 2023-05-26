@@ -1,4 +1,4 @@
-var counterValue = document.querySelector("#value");
+let counterValue = document.querySelector("#value");
 
 const decrement = document.querySelector('button[data-action="decrement"]');
 
